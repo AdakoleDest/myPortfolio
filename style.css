@@ -1,0 +1,294 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+
+}
+body {
+    background: radial-gradient(rgba(67, 80, 53, 0.7) 0%, black 10%, rgb(158, 44, 158), rgba(223, 19, 19, 0.7));
+    color: aliceblue;
+    
+}
+h1, h2, h3{
+    font-family: "Days one", sans-serif;
+}
+img{
+    object-fit: cover;
+    width: 300px;
+}
+.img-sect{
+    padding-top: 10rem;
+}
+.image-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.image-container> img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.image-container > h1{
+    text-align: center;
+}
+nav{
+    background: rgba(0, 0, 0, 0.99);
+    width: 100%;
+    padding: 2rem;
+    position: fixed;
+    z-index: 999;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    gap: 2rem;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+a:hover{
+    color:rgb(17, 17, 226)
+}
+
+.container2{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: auto auto;
+    align-items: center;
+    margin-top: 5rem;
+    background: #f2f2f2;
+    padding-top: 3rem;
+    box-shadow: 10px 10px 0px rgba(245, 255, 255, 0.7);
+}
+.container2 > h2{
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.aboutme-div{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 3rem;
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.7);
+    padding-bottom: 3rem;
+    
+}
+.about-img{
+    background: url("./Images/ekum.JPG");
+    background-size: cover;
+    width: 400px;
+    height: 450px;
+    object-fit: cover;
+    margin-top: 1rem;
+}
+#projects{
+    text-align: center;
+    margin-top: 4rem;
+}
+.projects{
+    display: flex;
+    flex-flow: wrap;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+.earth-project{
+    background: url("./Images/earth-img.jpg");
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 10px;
+    margin: 20px;
+}
+.bbc-project{
+    background: url("./Images/bbc-img.jpg");
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 10px;
+    margin: 20px;
+}
+#projects h2{
+    color: aliceblue;
+}
+.text{
+    position: absolute;
+    height: 85px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    background: aliceblue;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: rgba(0, 0, 0, 0.9);
+    overflow: hidden;
+    transition: 0.2s;
+    padding: 20px;
+}
+
+.text > a{
+    color: rgba(0, 0, 0, 0.9);
+}
+.text:hover{
+    height: 130px;
+    transition: 0.3s;
+}
+.text h3{
+    margin-top: 3px;
+}
+
+
+.content{
+    padding-bottom: 1rem;
+}
+.view {
+    padding-bottom: 2rem;
+}
+.button{
+    border: 5px solid rgb(83, 149, 206);
+    height: auto;
+    width: 160px;
+    margin-top: 1rem;
+}
+.form-section{
+    width: 100%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    padding: 75px 0 50px 0;
+    align-items: center;
+}
+.form{
+    width: 100%;
+    max-width: 800px;
+}
+
+#form{
+    flex-direction: row;
+    display: flex;
+    gap: 3rem;
+}
+
+label{
+    font-size: 1.2rem;
+}
+input{
+    width: 100%;
+    border-radius: 5px;
+    border: 0px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    outline: none;
+    font-size: 1.1rem;
+}
+textarea{
+    border-radius: 5px;
+    border: 0px;
+    padding: 15px 20px;
+    outline: none;
+    width: 100%;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+}
+
+.message-container{
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.message-container button{
+    color: #1d3d5f;
+    background: aliceblue;
+    border: 0;
+    border-radius: 5px;
+    width: 140px;
+    height: 40px;
+    margin-top: 40px;
+    margin-left: auto;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+footer {
+    height: 90px;
+    background: #1f2027;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.social-media{
+    font-size: 200%;
+    width: auto;
+    margin-left: auto;
+}
+
+.social-media a i{
+    color: aliceblue;
+    transition: 0.2s;
+}
+
+.social-media a i:hover{
+    color: aliceblue;
+    transition: 0.2s;
+}
+@media (max-width: 768px){
+    nav{
+        padding: 1.5rem;
+    }
+    .aboutme-div{
+        font-size: 1rem;
+        flex-direction: column;
+    }
+    .about-img{
+        width: 250px;
+    }
+     #form {
+        flex-direction: column;
+        display: flex;
+        gap: 3rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1020px){
+    .aboutme-div {
+            font-size: 1.2rem;
+            flex-direction: column;
+        }
+    
+        .about-img {
+            width: 500px;
+        }
+}
+
+
